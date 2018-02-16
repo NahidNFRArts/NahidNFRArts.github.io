@@ -1,0 +1,3374 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* .......styling the scrollbar....... */
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: linear-gradient(#46f1dd, #5ff246);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 100px;
+    background-color: black;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+}
+
+
+
+
+
+
+
+
+
+
+html,
+body {
+    margin: 0px;
+    min-height: 100%;
+    min-width: 100%;
+    display: table;
+    font-family: sans-serif;
+}
+
+/*.......... Styling the logo box for all page ........*/
+
+.Header {
+    height: 50px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 1);
+}
+
+.logobox {
+    position: absolute;
+    z-index: 10;
+    background-color: lemonchiffon;
+    height: 105px;
+    width: auto;
+    float: left;
+    margin-left: 3%;
+    box-shadow: inset 0 0 80px rgba(0, 0, 0, .8), 0 0 80px rgba(0, 0, 0, .8);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    transition: 1s;
+}
+
+.logo {
+    height: auto;
+    width: 70px;
+    padding: 15px 15px 20px 15px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.logo:hover {
+    background-color: lemonchiffon;
+    box-shadow: inset 0 0 150px rgba(255, 255, 255, 1);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+/*............ Styling the navigation bar for all the pages... ...........*/
+
+.menuicon {
+    display: none;
+}
+
+.Nav-Bar {
+    height: 50px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    box-shadow: inset 0 0 100px rgba(66, 134, 244, .6);
+    position: relative;
+
+}
+
+.Main-ul {
+    float: right;
+}
+
+.Main-ul .Main-Menu {
+    display: inline;
+    float: left;
+    list-style: none;
+    text-align: center;
+    height: 50px;
+}
+
+.Main-ul .Main-Menu a {
+    display: inline-block;
+    line-height: 48px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    border: 1px solid rgba(255, 255, 255, .1);
+    padding: 0px 15px;
+
+   
+    transition: 400ms ease-in-out;
+}
+
+.Sub-Menu {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .9);
+    display: none;
+    z-index: 9;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.Sub-Menu li {
+    list-style: none;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, .2);
+    box-shadow: inset 0 0 100px rgba(66, 134, 244, .4);
+    width: 160px;
+}
+
+.Sub-Menu li a {
+    line-height: 50px;
+    border: none;
+    width: 80%;
+}
+
+.Main-ul .Main-Menu a:hover {
+    background-color: transparent;
+    color: orange;
+    border-bottom-left-radius: 45%;
+    border-bottom-right-radius: 45%;
+    box-shadow: inset 0 0 40px rgba(255, 255, 255, .4);
+    animation: SubMenu 800ms ease-in-out;
+}
+
+.Nav-Bar .Main-ul .Main-Menu:hover .Sub-Menu {
+    display: block;
+    animation: SubMenu 800ms ease-in-out;
+}
+
+@keyframes SubMenu {
+    0% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.Active {
+    background-color: transparent;
+    color: orange;
+    box-shadow: inset 0 0 30px rgba(0, 255, 255, .6);
+}
+
+/*.............................................*/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/* Styling the home page backgroung .....*/
+
+#HOME {
+    position: absolute;
+    z-index: -10;
+    background: url(Image/SignInBG.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ............Styling the banner area for home page..........*/
+
+#Home-Banner {
+    height: auto;
+    width: 66%;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 40px;
+    box-shadow: inset 0 0 600px rgba(0, 0, 0, 1), 0 0 80px rgba(0, 0, 0, 1);
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    clear: both;
+}
+
+#Home-Search-Area {
+    display: inline-flex;
+    font-size: 15px;
+    margin: 15px;
+    position: absolute;
+    z-index: 1;
+    right: 0%;
+}
+
+.Home-search-box-input {
+    background-color: rgba(255, 255, 255, .6);
+    font-size: inherit;
+    border: 0.1em solid white;
+    border-radius: 0.5em 0 0 0.5em;
+    padding: 0.2em 0.5em;
+    outline: 0;
+    color: black;
+}
+
+.Home-search-box-input:hover,
+.Home-search-box-input:focus {
+    border-color: greenyellow;
+}
+
+.Home-search-button {
+    font-size: inherit;
+    border: 0.1em solid white;
+    border-radius: 0 0.5em 0.5em 0;
+    background-color: transparent;
+    border-left: 0;
+    padding: 0 0.75em;
+    color: white;
+    font-weight: bold;
+    outline: 0;
+    cursor: pointer;
+}
+
+.Home-Search-Icon {
+    font-size: 20px;
+    transform: rotate(-45deg);
+}
+
+.Home-search-button:hover,
+.Home-search-button:focus {
+    border-color: greenyellow;
+    background-color: yellow;
+    color: black;
+}
+
+/*.......Styling image slider on banner...........*/
+
+.Home-Slider .Home-BG-Image {
+    height: auto;
+    width: 20%;
+}
+
+.Home-Slider-Box {
+    width: 500%;
+    position: relative;
+    z-index: -1;
+    animation: slides 16s linear infinite;
+}
+
+.Home-Slider-Box .Home-BG-Image {
+    float: left;
+    transition: 2s;
+}
+
+@keyframes slides {
+    0% {
+        left: 0%;
+        opacity: .8;
+    }
+    20% {
+        left: 0%;
+        opacity: 1;
+    }
+    22% {
+        left: -100%;
+        opacity: .8;
+    }
+    45% {
+        left: -100%;
+        opacity: 1;
+    }
+    47% {
+        left: -200%;
+        opacity: .8;
+    }
+    70% {
+        left: -200%;
+        opacity: 1;
+    }
+    72% {
+        left: -300%;
+        opacity: .8;
+    }
+    85% {
+        left: -300%;
+        opacity: 1;
+    }
+    87% {
+        left: -400%;
+        opacity: .8;
+    }
+    100% {
+        left: -400%;
+        opacity: 1;
+        transition-delay: 3s
+    }
+}
+
+.Home-Banner-Cantainer {
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .4);
+    box-shadow: inset 0 0 40px rgba(0, 0, 0, .8), 0 0 40px rgba(0, 0, 0, .8);
+    padding: 20px 20px 100px 20px;
+    border-radius: 20px;
+    animation: slide-in 2s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-in {
+    0% {
+        top: -35%;
+        left: 0%;
+        opacity: 1;
+    }
+    70% {
+        top: 50%;
+        left: 0%;
+        opacity: 0.1;
+    }
+    100% {
+        top: 50%;
+        left: 5%;
+        opacity: 1;
+    }
+}
+
+.Home-Banner-h1 {
+    color: white;
+    font-size: 4em;
+    font-family: sans-serif;
+}
+
+.Home-Btn {
+    position: absolute;
+    overflow: hidden;
+    background-color: transparent;
+    color: white;
+    margin-top: 30px;
+    min-height: 20px;
+    height: 40px;
+    min-width: 20%;
+    width: 30%;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #f7f7f7;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: inset 0 0 20px rgba(235, 244, 66, 1), 0 0 20px rgba(235, 244, 66, 1);
+    text-shadow: 0 0 20px rgba(235, 244, 66, 1);
+
+    transition: 600ms;
+}
+
+.Home-Button-Sign-in {
+    left: 40%;
+}
+
+.Home-Btn:after {
+    content: '';
+    width: 0px;
+    height: 120%;
+    position: absolute;
+    left: -10%;
+    bottom: 0;
+    background-color: #f7f7f7;
+    transform: skewX(20deg);
+    z-index: -1;
+    transition: 600ms;
+}
+
+.Home-Btn:hover {
+    cursor: pointer;
+    color: black;
+
+}
+
+.Home-Btn:hover:after {
+    left: -10%;
+    width: 120%;
+}
+
+
+/* ........Styling the Main content area for home page...........*/
+
+#Home-Content {
+    height: auto;
+    width: 88%;
+    margin-top: 50px;
+    margin-left: 6%;
+    margin-right: 6%;
+    background-color: rgba(255, 255, 255, .8);
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, .8), 0 0 80px rgba(0, 0, 0, 1);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    align-items: stretch;
+    grid-row-gap: 60px;
+    padding-bottom: 80px;
+}
+
+.Home-Content-1 {
+    grid-column: 1/3;
+    grid-row: 1;
+}
+
+.Home-Content-2 {
+    grid-column: 1/2;
+    grid-row: 2;
+    margin: auto;
+}
+
+.Home-Content-2 .Home-Content-Image {
+    width: 100%;
+    height: auto;
+}
+
+.Home-Content-3 {
+    grid-column: 2/3;
+    grid-row: 2;
+    text-align: justify;
+    padding: 2% 10% 0% 5%;
+    line-height: 30px;
+
+}
+
+.Home-Content-4 {
+    grid-column: 1/2;
+    grid-row: 3;
+    text-align: justify;
+    padding: 2% 5% 0% 10%;
+    line-height: 30px;
+}
+
+.Home-Content-5 {
+    grid-column: 2/3;
+    grid-row: 3;
+    margin: auto;
+
+}
+
+.Home-Content-5 .Home-Content-Image {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* ...........Styling the footer section for home page........... */
+
+footer {
+    background-color: #0d161f;
+    height: 400px;
+    width: 100%;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    opacity: .98;
+}
+
+.Footer_Top {
+    background-color: rgba(0, 0, 0, .4);
+    width: 100%;
+    height: 60px;
+    display: inline-flex;
+}
+
+.S_icon {
+    height: 40px;
+    width: auto;
+    transition: 1s;
+}
+
+.Footer_Top_Section {
+    width: 25%;
+    opacity: .4;
+    cursor: pointer;
+    border-bottom: 2px;
+    transition: 1s;
+}
+
+.Footer_Top_Section:hover {
+    opacity: 1;
+    border-bottom: 2px solid rgba(255, 255, 255, .5);
+    background-color: rgba(255, 255, 255, .05);
+}
+
+.Footer_Top_Section .S_icon {
+    margin: 10px auto;
+    display: flex;
+}
+
+.Footer_2nd_Section {
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size: 12px;
+    margin-top: 50px;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.col {
+    margin-left: 20px;
+    border-right: 2px solid rgba(255, 255, 255, .1);
+}
+
+.col:nth-child(4) {
+    border: none;
+}
+
+.col p {
+    line-height: 22px;
+    opacity: .4;
+    cursor: pointer;
+}
+
+.col p:hover {
+    text-decoration: underline;
+    opacity: .8;
+}
+
+.col h3 {
+    margin-bottom: 15px;
+    opacity: .8;
+}
+
+.col1 {
+    grid-column: 1/2;
+    grid-row: 1;
+}
+
+.col2 {
+    grid-column: 2/3;
+    grid-row: 1;
+}
+
+.col3 {
+    grid-column: 3/4;
+    grid-row: 1;
+}
+
+.col4 {
+    grid-column: 4/5;
+    grid-row: 1;
+}
+
+.Footer_Last_Section {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.Footer_Last_Section p {
+    opacity: .6;
+    font-size: 10px;
+}
+
+/*END of Home Page*/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/*Styling the footer for other pages...*/
+
+#All-Container {
+    min-height: 100%;
+    width: 100%;
+    background-image: url(Image/SignInBG.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#BGG1 {
+    background: url(Image/BGGG1.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    position: absolute;
+    min-width: 100%;
+    height: 300px;
+}
+
+
+
+
+/* Body content for sign in page section stars here */
+
+.sign_in_section {
+    margin-top: 30px;
+    flex: 1;
+}
+
+/*Styling the sign-in page*/
+
+/* Sign-in page starts here */
+
+#Sign-in-Container {
+    min-height: 100%;
+    width: 100%;
+    background-image: url(Image/BGGG2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#Sign-In {}
+
+.Form {
+    position: relative;
+    top: 60px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 300px;
+    height: 310px;
+    border-radius: 20px;
+    text-align: center;
+    align-content: center;
+}
+
+.UIcon {
+    position: absolute;
+    transform: translate(-50%, -40%);
+    left: 50%;
+    height: 80px;
+    width: auto;
+    border-radius: 50%;
+    background-color: aqua;
+    padding: 8px;
+    animation-delay: 2s;
+    animation: ColorChange 2s linear infinite;
+    transition: 600ms ease-in-out;
+    border: .2em solid white;
+}
+
+.UIcon:hover {
+    opacity: .6;
+}
+
+
+.Sign_Inputs {
+    position: relative;
+    top: 100px;
+    margin: 20px;
+    color: white;
+}
+
+.fa {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.Sign_E-mail input[type="email"] {
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.Sign_Pass input[type="password"] {
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+@keyframes ColorChange {
+    0% {
+        border: .2em solid red;
+        box-shadow: inset 0 0 30px rgba(100, 150, 255, .6), 0 0 40px rgba(100, 150, 255, .4);
+    }
+    50% {
+        border: .2em solid yellow;
+        box-shadow: inset 0 0 20px rgba(100, 150, 255, .2), 0 0 40px rgba(100, 150, 255, .2);
+    }
+    100% {
+        border: .2em solid blue;
+        box-shadow: inset 0 0 80px rgba(100, 150, 255, .2), 0 0 40px rgba(100, 150, 255, .4);
+    }
+}
+
+.Button-Signin input[type="submit"] {
+    background-color: transparent;
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 0 auto;
+    box-shadow: inset 0 0 20px rgba(100, 150, 255, .8), 0 0 20px rgba(100, 150, 255, .8);
+    display: inline-block;
+    transition: transform 600ms ease-in-out;
+
+}
+
+.Button-Signin input[type="submit"]:hover {
+    background-color: rgba(255, 255, 255, .8);
+    color: black;
+    transform: translate(-20px, 0px) rotate(10deg);
+}
+
+.Sign_forget {
+    margin-top: 70px;
+}
+
+.Sign_forget,
+a {
+    color: aqua;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+/*End of sign-in page*/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/*.............Styling the join us now page ......*/
+
+#BG {
+    height: 120%;
+    width: auto;
+    position: fixed;
+    z-index: -100;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#Join_Us_Now {
+    background: url(Image/Dark-Planet-HD-wallpaper.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    position: relative;
+}
+
+.Join_Us_Now_Section {
+    margin-left: 200px;
+}
+
+.Join-In-Box {
+    background-color: rgba(0, 0, 0, .5);
+    height: 680px;
+    width: 420px;
+    padding-top: 20px;
+    margin: auto;
+    margin-top: 40px;
+    box-shadow: inset 0 0 40px rgba(0, 0, 0, .8), 0 0 100px rgba(0, 0, 0, 1);
+    border: 1px solid rgba(255, 255, 255, .2);
+    position: relative;
+    z-index: 5;
+    color: white;
+}
+
+.Join-In-Box:before,
+.Join-In-Box:after {
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+    top: 0;
+    left: -1px;
+}
+
+.Join-In-Box:before {
+    transform: rotate(2deg);
+    z-index: -1;
+}
+
+.Join-In-Box:after {
+    transform: rotate(-3deg);
+    z-index: -5;
+}
+
+.Join-In-Form-Content p,
+.Join-In-Form-Content input {
+    display: inline;
+}
+
+.Join-In-Form-Content p {
+    color: white;
+    width: 200px;
+    margin: auto;
+}
+
+select {
+    width: 48px;
+}
+
+.Join-In-Form-Content input[type='text'],
+.Join-In-Form-Content input[type='password'],
+.Join-In-Form-Content input[type='tel'],
+.Join-In-Form-Content input[type='email'] {
+    background-color: transparent;
+    border: none;
+    height: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, .8);
+    margin-left: 20px;
+    color: white;
+    border-radius: 2px;
+}
+
+.Join-In-Form-Content input[type='date'] {
+    width: 200px;
+    height: 25px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, .8);
+    color: white;
+    border: 1px solid white;
+}
+
+.Join-In-Form-Content input[type='file'] {
+    width: 200px;
+    height: 25px;
+    background-color: transparent;
+    color: white;
+}
+
+.Join-In-Form-Content {
+    margin: 20px;
+}
+
+.Join-In-Form-Content p {
+    margin: 20px;
+    color: yellowgreen;
+}
+
+.Create_Account_Button {
+    height: 40px;
+    width: 140px;
+    background-color: aqua;
+    color: black;
+    border: 4px solid;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 800ms;
+    margin: 0px 20px;
+}
+
+.Join-In-Form-Content input[type=submit]:hover {
+    background-color: transparent;
+    border-radius: 0px;
+    box-shadow: inset 0 0 5px aqua, 0 0 20px aqua;
+    border: 2px solid aqua;
+    color: aqua;
+}
+
+.name {
+    width: 100px;
+}
+
+.JH1 {
+    text-align: center;
+}
+
+.Purchase_Date {
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 60px;
+}
+
+.Par {
+    margin-left: 40px;
+}
+
+/*..........End of join in page...........*/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/*.....Styling the top 10 page......*/
+
+.Top_10_Container {}
+
+#Top_10 {}
+
+.Top_10_Banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.Top_10_Banner img {
+    height: auto;
+    width: 100%;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 1);
+}
+
+.Top_10_Banner_Heading {
+    font-family: sans-serif;
+    font-size: 300%;
+    font-weight: 500;
+    position: absolute;
+    color: white;
+    top: 70%;
+    left: 5%;
+    animation: Headfade 1000ms linear infinite;
+}
+
+@keyframes Headfade {
+    0% {
+        opacity: 1;
+        text-shadow: 0 0 10px rgba(255, 255, 255, .8);
+    }
+    100% {
+        opacity: 0.8;
+        color: rgba(255, 255, 255, .7);
+    }
+}
+
+.Thunder {
+    max-width: 280px;
+    height: auto;
+    position: absolute;
+    z-index: 10;
+    top: 62%;
+    left: 4.5%;
+    animation: Thunder 4s linear infinite;
+}
+
+@keyframes Thunder {
+    0% {
+        opacity: .4;
+    }
+    1% {
+        opacity: 0;
+    }
+    2% {
+        opacity: 0;
+    }
+    4% {
+        opacity: .6;
+    }
+    8% {
+        opacity: 0;
+    }
+    12% {
+        opacity: 1;
+    }
+    14% {
+        opacity: .4;
+    }
+    16% {
+        opacity: .8;
+    }
+    40% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0;
+    }
+    82% {
+        opacity: 0.4;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+#Top_10_Main_Content {
+    background-color: white;
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.8);
+    margin-top: 0px;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.T {
+    height: 240px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: inset 0 0 80px rgba(0, 0, 0, .1);
+    transition: 600ms;
+    text-align: center;
+    overflow: hidden;
+}
+
+.T:hover img {
+    width: 85%;
+}
+
+.T:hover p {
+    display: none;
+}
+
+.T img {
+    width: 50%;
+    height: auto;
+    margin-top: 20px;
+    transition: 600ms;
+}
+
+.T p {
+    transition: 600ms;
+}
+
+.T1 {
+    height: 100px;
+    background-color: rgba(100, 100, 100, .2);
+    grid-column: 1/4;
+    grid-row: 1;
+    line-height: 100px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .1);
+    margin: 0px;
+}
+
+.T1 h1 {
+    font-size: 40px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+}
+
+.T2 {
+    grid-column: 1/2;
+    grid-row: 2;
+}
+
+.T3 {
+    grid-column: 2/3;
+    grid-row: 2;
+}
+
+.T4 {
+    grid-column: 3/4;
+    grid-row: 2;
+}
+
+.T5 {
+    grid-column: 1/2;
+    grid-row: 3;
+}
+
+.T6 {
+    grid-column: 2/3;
+    grid-row: 3;
+}
+
+.T7 {
+    grid-column: 3/4;
+    grid-row: 3;
+}
+
+.T8 {
+    grid-column: 1/2;
+    grid-row: 4;
+}
+
+.T9 {
+    grid-column: 2/3;
+    grid-row: 4;
+}
+
+.T10 {
+    grid-column: 3/4;
+    grid-row: 4;
+}
+
+.T11 {
+    grid-column: 1/4;
+    grid-row: 5;
+}
+
+.T11 img {
+    width: 15%;
+}
+
+.T11:hover img {
+    width: 32%;
+}
+
+.T12 {
+    height: 100px;
+    background-color: rgba(100, 100, 100, .2);
+    grid-column: 1/4;
+    grid-row: 6;
+    line-height: 100px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .1);
+    margin: 0px;
+}
+
+.T12 h1 {
+    font-size: 40px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+}
+
+.T13 {
+    grid-column: 1/2;
+    grid-row: 7;
+}
+
+.T14 {
+    grid-column: 2/3;
+    grid-row: 7;
+}
+
+.T15 {
+    grid-column: 3/4;
+    grid-row: 7;
+}
+
+.T16 {
+    grid-column: 1/2;
+    grid-row: 8;
+}
+
+.T17 {
+    grid-column: 2/3;
+    grid-row: 8;
+}
+
+.T18 {
+    grid-column: 3/4;
+    grid-row: 8;
+}
+
+.T19 {
+    grid-column: 1/2;
+    grid-row: 9;
+}
+
+.T20 {
+    grid-column: 2/3;
+    grid-row: 9;
+}
+
+.T21 {
+    grid-column: 3/4;
+    grid-row: 9;
+}
+
+.T22 {
+    grid-column: 1/4;
+    grid-row: 10;
+}
+
+.T22 img {
+    width: 15%;
+}
+
+.T22:hover img {
+    width: 32%;
+}
+
+.T23 {
+    height: 100px;
+    background-color: rgba(100, 100, 100, .2);
+    grid-column: 1/4;
+    grid-row: 11;
+    line-height: 100px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .1);
+    margin: 0px;
+}
+
+.T23 h1 {
+    font-size: 40px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+}
+
+.T24 {
+    grid-column: 1/2;
+    grid-row: 12;
+}
+
+.T25 {
+    grid-column: 2/3;
+    grid-row: 12;
+}
+
+.T26 {
+    grid-column: 3/4;
+    grid-row: 12;
+}
+
+.T27 {
+    grid-column: 1/2;
+    grid-row: 13;
+}
+
+.T28 {
+    grid-column: 2/3;
+    grid-row: 13;
+}
+
+.T29 {
+    grid-column: 3/4;
+    grid-row: 13;
+}
+
+.T30 {
+    grid-column: 1/2;
+    grid-row: 14;
+}
+
+.T31 {
+    grid-column: 2/3;
+    grid-row: 14;
+}
+
+.T32 {
+    grid-column: 3/4;
+    grid-row: 14;
+}
+
+.T33 {
+    grid-column: 1/4;
+    grid-row: 15;
+}
+
+.T33 img {
+    width: 15%;
+}
+
+.T33:hover img {
+    width: 32%;
+}
+
+/*...................End....................*/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/*..............styling the community page.............*/
+
+#Community_Section {
+    margin: auto;
+}
+
+.Community_Form {
+    position: relative;
+    top: 60px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 320px;
+    height: auto;
+    border-radius: 20px;
+    text-align: center;
+    align-content: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.C_h1 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.Sign_Inputs {
+    position: relative;
+    top: 100px;
+    margin: 20px;
+    color: white;
+}
+
+.fa {
+    font-size: 30px;
+    margin-right: 10px;
+    color: white;
+}
+
+textarea {
+    margin: 10px 0px;
+    color: black;
+}
+
+.Community input[type="email"] {
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.comment {
+    color: white;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.Community input[type="password"] {
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+
+.Community input[type="submit"] {
+    background-color: transparent;
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 0 auto;
+    box-shadow: inset 0 0 20px rgba(100, 150, 255, .8), 0 0 20px rgba(100, 150, 255, .8);
+    display: inline-block;
+    transition: transform 600ms ease-in-out;
+
+}
+
+.Community input[type="submit"]:hover {
+    background-color: rgba(255, 255, 255, .8);
+    color: black;
+    transform: translate(-20px, 0px) rotate(10deg);
+}
+
+.S_Icon {
+    height: 18px;
+    width: auto;
+    cursor: pointer;
+    padding-left: 5px;
+}
+
+.Par,
+.S_Icon {
+    display: inline;
+}
+
+.C_P {
+    width: 20%;
+    height: auto;
+
+}
+
+.Input_fild {
+    background-color: transparent;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid aqua;
+}
+
+.Prev_Comm {
+    margin-bottom: 5px;
+    margin-left: 20px;
+    text-align: justify;
+}
+
+.CPara {
+    margin-left: 5px;
+    float: left;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.Community_Select_Option {
+    width: 80px;
+    background-color: transparent;
+    transition: 1s;
+    color: yellowgreen;
+    border-radius: 5px;
+    border: 2px solid yellowgreen;
+
+}
+
+.Community_Select_Option:hover {
+    width: 80px;
+    background-color: transparent;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px aqua, 0 0 20px aqua;
+    border: 2px solid aqua;
+    color: aqua;
+}
+
+.P_Comm {
+    width: 60%;
+    float: right;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    font-size: 11px;
+    text-align: justify;
+    margin-right: 10px;
+    border-radius: 2px;
+}
+
+.Comment_Submit {
+    padding: 5px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    border: 0px;
+    border: 2px solid;
+    transition: 1s;
+    cursor: pointer;
+    width: 80px;
+    margin-left: 65px;
+}
+
+.Comment_Submit:hover {
+    background-color: transparent;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px aqua, 0 0 20px aqua;
+    border: 2px solid aqua;
+    color: aqua;
+}
+
+/*.....End of community page......*/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/*.............Tool box..................*/
+
+#BGG3 {
+    background: url(Image/BGGG3.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    position: absolute;
+    min-width: 100%;
+    height: 300px;
+}
+
+#Tools_Container {
+    background: url(Image/hmm.jpg);
+    min-height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 800px;
+    margin-top: 0px;
+}
+
+.ToolBox {
+    margin: auto;
+    margin-top: 80px;
+    height: 400px;
+    width: 200px;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 1), 0 0 80px rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, .4);
+    border-radius: 20px;
+    color: white;
+    padding: 50px 50px 0px 50px;
+    position: relative;
+}
+
+.ToolBox p {
+    padding-left: 10px;
+}
+
+select {
+    margin: 10px 0px;
+}
+
+.select {
+    width: 200px;
+    height: 25px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, .8);
+    color: white;
+}
+
+option {
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.CalcBtn {
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 4px solid black;
+    border-style: dashed;
+    cursor: pointer;
+    transition: 1s;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.CalcBtn:hover {
+    background-color: transparent;
+    border-radius: 0px;
+    box-shadow: inset 0 0 5px aqua, 0 0 20px aqua;
+    border: 2px solid aqua;
+    color: aqua;
+}
+
+.ToolH1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.result {
+    width: 200px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.SRD {
+    margin-top: 10px;
+}
+
+.Reg-Date {
+    width: 200px;
+    height: 25px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, .8);
+    color: white;
+    border: 1px solid white;
+    margin-bottom: 10px;
+}
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/*.......Styling the news and review page..........*/
+
+#News_And_Review_section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: auto;
+    width: 90%;
+    box-shadow: inset 0 0 200px rgba(0, 0, 0, .5), 0 0 100px rgba(0, 0, 0, .5);
+}
+
+.News {
+    font-size: 25px;
+}
+
+.NC1 {
+    grid-column: 1/3;
+    grid-row: 1;
+    height: auto;
+    padding: 80px 0px 20px 0px;
+    font-size: 40px;
+    margin-left: 40px;
+}
+
+.NC2 {
+    grid-column: 1/2;
+    grid-row: 2;
+    height: auto;
+    position: relative;
+    animation: 2s Grow;
+    animation-fill-mode: forwards;
+    margin-left: 40px;
+    box-shadow: 0 0 30px;
+}
+
+@keyframes Grow {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.News_Animate {
+    position: absolute;
+    left: 5%;
+    transition: 2s;
+    font-size: 0px;
+    top: 80%;
+    opacity: 1;
+    animation: 2s News;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+@keyframes News {
+    0% {
+        opacity: 1;
+        top: 0px;
+        font-size: 0px;
+        color: blue;
+    }
+    90% {
+        top: 80%;
+        font-size: 35px;
+        color: black;
+    }
+    100% {
+        opacity: 1;
+        top: 80%;
+        font-size: 35px;
+        color: greenyellow;
+        background-color: rgba(0, 0, 0, .6);
+    }
+}
+
+.NC2 img {
+    width: 100%;
+    height: auto;
+}
+
+.NC3 {
+    grid-column: 1/2;
+    grid-row: 3;
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.NC4 {
+    grid-column: 1/2;
+    grid-row: 4;
+    width: 100%;
+    margin-left: 40px;
+}
+
+.NewsVid {
+    height: auto;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.NC5 {
+    grid-column: 2/3;
+    grid-row: 2;
+    width: 100%;
+    position: relative;
+    height: 200px;
+    width: 200px;
+}
+
+.NC6 {
+    grid-column: 1/2;
+    grid-row: 5;
+    width: 100%;
+    margin-left: 40px;
+    text-align: justify;
+    position: relative;
+}
+
+.NC6 img {
+    width: 100%;
+
+}
+
+.NC6 .Lamberghini_News p {
+    padding: 20px 20px 0px 20px;
+}
+
+.Lamberghini_News {
+    margin-bottom: 40px;
+}
+
+.Lamberghini_News img {
+    box-shadow: inset 0 0 500px rgba(0, 0, 0, 1);
+}
+
+.Paragraph_Overflow {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    color: white;
+    background-color: black;
+    margin: 20px;
+}
+
+/*.................End of News page..................*/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/*....Styling the electric car page.......*/
+
+#BGG2 {
+    background: url(Image/BGGG1.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    position: absolute;
+    min-width: 100%;
+    height: 300px;
+}
+
+#ElectricCar {
+    box-shadow: inset 0 0 300px rgba(0, 0, 0, .2);
+}
+
+#Electric-Car-section {
+    margin-top: 180px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-bottom: 40px;
+    background-color: transparent;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.Electric_Car_heading {
+    grid-column: 1/5;
+    grid-row: 1;
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    color: dimgray;
+}
+
+
+.Car_Animate_Box {
+    height: 180px;
+    width: 46%;
+    margin: 0 auto;
+    position: relative;
+    grid-column: 1/5;
+    grid-row: 2;
+}
+
+.Animate_car {}
+
+.Car {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.tyre {
+    height: 50%;
+    width: auto;
+    position: absolute;
+    filter: blur(.5px);
+    animation: 100ms Spin linear infinite;
+}
+
+@keyframes Spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.tyre1 {
+    top: 42%;
+    left: 10%;
+}
+
+.tyre2 {
+    top: 42%;
+    left: 71%;
+}
+
+.E3 {
+    grid-column: 1/5;
+    grid-row: 3;
+    margin: 40px 10% 40px 10%;
+}
+
+.Benefits img {
+    height: auto;
+    width: 15%;
+}
+
+.E4 {
+    grid-column: 1/4;
+    grid-row: 4;
+    text-align: justify;
+    margin: 6% 10%;
+}
+
+.E5-1 {
+    grid-column: 1/2;
+    grid-row: 5;
+    margin-top: 20px;
+    margin-left: 10%;
+}
+
+.green {
+    color: yellowgreen;
+    font-weight: 600;
+}
+
+.blue {
+    color: dodgerblue;
+    font-weight: 600;
+}
+
+
+.E5 {
+    grid-column: 2/4;
+    grid-row: 5;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+
+.E5 img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 20px;
+    border-radius: 20px;
+}
+
+
+.E6 {
+    grid-column: 2/4;
+    grid-row: 6;
+    height: auto;
+    text-align: center;
+    margin: 10% auto;
+}
+
+.E6 img {
+    height: auto;
+    width: 100%;
+}
+
+.EP1 {
+    font-size: 40px;
+    color: dodgerblue;
+}
+
+.EP2 {
+    font-size: 40px;
+    color: dodgerblue;
+}
+
+.EP3 {
+    font-size: 40px;
+    color: yellowgreen;
+}
+
+.E6_P {
+    margin-left: 15%;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.E6_P1 {
+    float: left;
+}
+
+.E6_P2 {
+    float: left;
+}
+
+.E6_P3 {
+    float: left;
+}
+
+.margin {
+    float: left;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+.E7 {
+    grid-column: 2/4;
+    grid-row: 7;
+    margin-top: 20%;
+    text-align: justify;
+    clear: both;
+
+}
+
+.E7 h2 {
+    margin-bottom: 2%;
+}
+
+.E7 img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 20px;
+    border-radius: 20px;
+}
+
+.E8 {
+    grid-column: 1/5;
+    grid-row: 7;
+    margin: 2% 0;
+    text-align: justify;
+}
+
+.E9 {
+    grid-column: 1/5;
+    grid-row: 8;
+    width: 100%;
+    height: 100%;
+}
+
+.E9 img {
+    width: 100%;
+    height: auto;
+}
+
+/*.............End of electric car.........*/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/*Styling at 1070px*/
+
+@media screen and (max-width:1070px) {
+    .Car_Animate_Box {
+        height: 175px;
+        width: 60%;
+        margin: 0 auto;
+        position: relative;
+        grid-column: 1/5;
+        grid-row: 2;
+    }
+    .tyre {
+        height: 50%;
+        width: auto;
+        position: absolute;
+        filter: blur(.5px);
+        animation: 100ms Spin linear infinite;
+    }
+
+    .NC5 {
+        grid-column: 2/3;
+        grid-row: 2;
+        width: 100%;
+        position: relative;
+        height: 250px;
+        width: 200px;
+    }
+    .NC6 {
+        grid-column: 1/2;
+        grid-row: 5;
+        width: 100%;
+        margin-left: 40px;
+    }
+
+
+}
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+@media screen and (max-width:900px) {
+    #Home-Banner {
+        height: auto;
+        width: 80%;
+        margin-left: 6%;
+        margin-right: 6%;
+        margin-top: 40px;
+    }
+    .NC5 {
+        display: none;
+    }
+    .NC6 {
+        grid-column: 1/4;
+        grid-row: 5;
+        width: 100%;
+        margin-left: 0px;
+    }
+    .E5 {
+        grid-column: 1/4;
+        grid-row: 5;
+        text-align: justify;
+        margin: 40px 0%;
+    }
+
+
+}
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+@media screen and (max-width:860px) {
+    .logobox {
+        margin-left: 1%;
+    }
+    .Main-ul .Main-Menu a {
+        font-size: 11px;
+        padding: 0px 10px;
+    }
+    .Sub-Menu li a {
+        line-height: 50px;
+        border: none;
+        width: 85%;
+    }
+
+    #Top_10_Main_Content {
+        width: 100%;
+    }
+    .T {
+        height: 200px;
+    }
+    .T1 {
+        height: 100px;
+    }
+    .T p {
+        font-size: 14px;
+    }
+    .E4 {
+        grid-column: 1/5;
+        grid-row: 4;
+    }
+    .E5 {
+        grid-column: 1/5;
+        grid-row: 5;
+        text-align: justify;
+        margin: 40px 0%;
+    }
+}
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+@media screen and (max-width:700px) {
+    /*Defining width of the contaners at 700px*/
+    .Nav-Bar {
+        display: none;
+    }
+    .hr1 {
+        margin-left: -20px;
+        width: 165px;
+        height: 2px;
+        background-color: white;
+        opacity: .2;
+    }
+    .hr2 {
+        margin-left: -20px;
+        width: 200px;
+        height: 2px;
+        background-color: white;
+        opacity: .2;
+    }
+    #Home-Banner {
+        height: auto;
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: 40px;
+    }
+    #Home-Content {
+        height: auto;
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    #Home-Footer {
+        position: relative;
+        top: 100%;
+        height: 80px;
+        width: 100%;
+        margin: 0px;
+        background-color: rgba(0, 0, 0, .4);
+        box-shadow: inset 0 0 200px rgba(0, 0, 0, .8), 0 0 80px rgba(0, 0, 0, .4);
+    }
+
+    /*...........customizing the side bar menu at 700px.........*/
+    .menuicon {
+        display: block;
+    }
+    .MenuBtn {
+        margin: 10px;
+        height: 30px;
+        width: 80px;
+        background-color: aqua;
+        float: right;
+        border-radius: 15px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 14px;
+        cursor: pointer;
+        color: black;
+        box-shadow: inset 0 0 20px rgba(0, 0, 0, 1), 0 0 20px rgba(50, 130, 255, .6);
+        transition: 600ms ease-in-out;
+    }
+    .MenuBtn:hover {
+        font-size: 18px;
+        background-color: orange;
+        box-shadow: inset 0 0 20px rgba(0, 0, 0, .8), 0 0 20px rgba(255, 210, 70, .6);
+    }
+    .menubar-container {
+        position: relative;
+        z-index: 100;
+        background-color: rgba(55, 55, 55, 1);
+        width: 70%;
+        max-width: 160px;
+        padding: 20px;
+        height: 100%;
+        text-align: center;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+        box-shadow: inset 0px 0px 150px rgba(0, 0, 0, 1), 0px 0px 250px rgba(0, 0, 0, 1);
+
+        transform: translate(-150%, 0);
+
+      
+        transition: transform 250ms ease-out;
+    }
+
+
+    .menubar:before {
+        content: "";
+        position: fixed;
+        display: none;
+        background-color: rgba(0, 0, 0, .6);
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+    .menubar:target:before {
+        display: block;
+    }
+    .menubar:target .menubar-container {
+    
+        transform: translate(0%, 0);
+    }
+    .menu-list li {
+        list-style: none;
+        padding-top: 20px;
+        padding-bottom: 16px;
+    }
+    .menu-list li a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        line-height: 100%;
+        font-size: 14px;
+    }
+    .menu-list .close a {
+        color: red;
+        font-size: 18px;
+    }
+    .menu-list li a:hover {
+        color: orange;
+    }
+    hr {
+        opacity: .2;
+    }
+    #menu-close {}
+    #Top_10_Main_Content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .T {
+        height: auto;
+        border: 1px solid rgba(0, 0, 0, .1);
+        box-shadow: inset 0 0 80px rgba(0, 0, 0, .1);
+        transition: 600ms;
+        text-align: center;
+    }
+    .T img {
+        float: left;
+        margin-left: 5%;
+    }
+    .T .Pa {
+        float: right;
+        margin-top: 10%;
+        margin-right: 5%;
+    }
+    .T .Pa p {
+        font-size: 15px;
+    }
+
+    .T1 {
+        height: 100px;
+        background-color: rgba(100, 100, 100, .2);
+        grid-column: 1/4;
+        grid-row: 1;
+        line-height: 100px;
+        box-shadow: 0 0 60px rgba(0, 0, 0, .1);
+    }
+
+    .T2 {
+        grid-column: 1/4;
+        grid-row: 2;
+    }
+
+    .T3 {
+        grid-column: 1/4;
+        grid-row: 3;
+    }
+
+    .T4 {
+        grid-column: 1/4;
+        grid-row: 4;
+    }
+
+    .T5 {
+        grid-column: 1/4;
+        grid-row: 5;
+    }
+
+    .T6 {
+        grid-column: 1/4;
+        grid-row: 6;
+    }
+
+    .T7 {
+        grid-column: 1/4;
+        grid-row: 7;
+    }
+
+    .T8 {
+        grid-column: 1/4;
+        grid-row: 8;
+    }
+
+    .T9 {
+        grid-column: 1/4;
+        grid-row: 9;
+    }
+
+    .T10 {
+        grid-column: 1/4;
+        grid-row: 10;
+    }
+
+    .T11 {
+        grid-column: 1/4;
+        grid-row: 11;
+    }
+    .T11 img {
+        width: 50%
+    }
+    .T:hover img {
+        width: 50%;
+    }
+
+    .T:hover p {
+        display: block;
+    }
+    .T12 {
+        height: 100px;
+        background-color: rgba(100, 100, 100, .2);
+        grid-column: 1/4;
+        grid-row: 12;
+        line-height: 100px;
+        box-shadow: 0 0 60px rgba(0, 0, 0, .1);
+    }
+
+    .T12 h1 {
+        font-size: 40px;
+        text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+    }
+
+    .T13 {
+        grid-column: 1/4;
+        grid-row: 13;
+    }
+
+    .T14 {
+        grid-column: 1/4;
+        grid-row: 14;
+    }
+
+    .T15 {
+        grid-column: 1/4;
+        grid-row: 15;
+    }
+
+    .T16 {
+        grid-column: 1/4;
+        grid-row: 16;
+    }
+
+    .T17 {
+        grid-column: 1/4;
+        grid-row: 17;
+    }
+
+    .T18 {
+        grid-column: 1/4;
+        grid-row: 18;
+    }
+
+    .T19 {
+        grid-column: 1/4;
+        grid-row: 19;
+    }
+
+    .T20 {
+        grid-column: 1/4;
+        grid-row: 20;
+    }
+
+    .T21 {
+        grid-column: 1/4;
+        grid-row: 21;
+    }
+
+    .T22 {
+        grid-column: 1/4;
+        grid-row: 22;
+    }
+
+    .T22 img {
+        width: 50%;
+    }
+    .T23 {
+        height: 100px;
+        background-color: rgba(100, 100, 100, .2);
+        grid-column: 1/4;
+        grid-row: 23;
+        line-height: 100px;
+        box-shadow: 0 0 60px rgba(0, 0, 0, .1);
+    }
+
+    .T23 h1 {
+        font-size: 40px;
+        text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+    }
+
+    .T24 {
+        grid-column: 1/4;
+        grid-row: 24;
+    }
+
+    .T25 {
+        grid-column: 1/4;
+        grid-row: 25;
+    }
+
+    .T26 {
+        grid-column: 1/4;
+        grid-row: 26;
+    }
+
+    .T27 {
+        grid-column: 1/4;
+        grid-row: 27;
+    }
+
+    .T28 {
+        grid-column: 1/4;
+        grid-row: 28;
+    }
+
+    .T29 {
+        grid-column: 1/4;
+        grid-row: 29;
+    }
+
+    .T30 {
+        grid-column: 1/4;
+        grid-row: 30;
+    }
+
+    .T31 {
+        grid-column: 1/4;
+        grid-row: 31;
+    }
+
+    .T32 {
+        grid-column: 1/4;
+        grid-row: 32;
+    }
+
+    .T33 {
+        grid-column: 1/4;
+        grid-row: 33;
+    }
+
+    .T33 img {
+        width: 50%;
+    }
+    /**/
+    #News_And_Review_section {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        margin: auto;
+        width: 90%;
+    }
+
+    .News {
+        font-size: 25px;
+    }
+
+    .NC1 {
+        grid-column: 1/3;
+        grid-row: 1;
+        height: auto;
+        padding: 80px 0px 20px 0px;
+        font-size: 40px;
+    }
+
+    .NC2 {
+        grid-column: 1/3;
+        grid-row: 2;
+        height: auto;
+        position: relative;
+    }
+    .News_Animate {
+        top: 0;
+        left: 5%;
+        transition: 2s;
+        font-size: 16px;
+        top: 80%;
+        opacity: 1;
+        color: yellowgreen;
+    }
+    .NC2 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .NC3 {
+        grid-column: 1/3;
+        grid-row: 3;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .NC4 {
+        grid-column: 1/3;
+        grid-row: 4;
+        width: 100%;
+    }
+
+    .NewsVid {
+        height: auto;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    #News_And_Review_section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+        width: 100%;
+        box-shadow: inset 0 0 200px rgba(0, 0, 0, .5), 0 0 100px rgba(0, 0, 0, .5);
+        margin: 0px;
+    }
+
+    .News {
+        font-size: 18px;
+    }
+
+    .NC1 {
+        grid-column: 1/3;
+        grid-row: 1;
+        height: auto;
+        padding: 60px 0px 20px 0px;
+        font-size: 30px;
+        margin: 0px;
+    }
+
+    .NC2 {
+        grid-column: 1/3;
+        grid-row: 2;
+        height: auto;
+        position: relative;
+        box-shadow: 0 0 30px;
+        margin: 0px;
+    }
+    .News_Animate {
+        position: absolute;
+        top: 0;
+        left: 2%;
+        transition: 2s;
+        font-size: 14px;
+        top: 80%;
+        background-color: rgba(0, 0, 0, .6);
+    }
+
+    .NC2 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .NC3 {
+        grid-column: 1/3;
+        grid-row: 3;
+        width: 100%;
+        margin: 20px 0px;
+    }
+
+    .NC4 {
+        grid-column: 1/3;
+        grid-row: 4;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .NewsVid {
+        height: auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .NC5 {
+        display: none;
+    }
+    .NC6 {
+        grid-column: 1/4;
+        grid-row: 5;
+        width: 100%;
+        margin-left: 0px;
+    }
+    #BGG2 {
+        display: none;
+    }
+
+}
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+@media screen and (max-width:600px) {
+    .Top_10_Banner_Heading {
+        font-size: 200%;
+        font-weight: 500;
+        position: absolute;
+        color: white;
+        top: 70%;
+        left: 5%;
+        animation: Headfade 1000ms linear infinite;
+    }
+    .Thunder {
+        max-width: 200px;
+        height: auto;
+        position: absolute;
+        z-index: 10;
+        top: 52%;
+        left: 4.5%;
+        animation: Thunder 4s linear infinite;
+    }
+    .T h1 {
+        font-size: 30px;
+    }
+    footer {
+        height: 160px;
+    }
+    .Footer_2nd_Section {
+        display: none;
+    }
+
+}
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+@media screen and (max-width:550px) {
+    .logobox {
+
+        height: 80px;
+    }
+    .logo {
+        height: auto;
+        width: 45px;
+    }
+
+    .Home-Banner-h1 {
+        font-size: 2em;
+    }
+    .Home-Btn {
+        color: white;
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    .Home-Button-Sign-in {
+        margin-left: 10px;
+    }
+    .Home-Banner-Cantainer {
+        padding: 20px 20px 70px 20px;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, .2);
+    }
+    .Home-Content-1 {
+        grid-column: 1/3;
+        grid-row: 1;
+    }
+
+    .Home-Content-2 {
+        grid-column: 1/3;
+        grid-row: 2;
+        margin: auto;
+    }
+    .Home-Content-3 {
+        grid-column: 1/3;
+        grid-row: 3;
+        text-align: justify;
+        padding: 0% 5% 0% 5%;
+    }
+    .Home-Content-4 {
+        grid-column: 1/3;
+        grid-row: 5;
+        text-align: justify;
+        padding: 0% 5% 0% 5%;
+    }
+
+    .Home-Content-5 {
+        grid-column: 1/3;
+        grid-row: 4;
+    }
+    #Home-Footer p,
+    #Home-Footer img {
+        display: table;
+    }
+    #Home-Footer p {
+        font-size: 10px;
+    }
+    #Home-Footer img {
+        width: 30px;
+        float: right;
+        line-height: 80px;
+        left: -2%;
+        padding-left: .5%;
+    }
+    .F-C {
+        margin-right: 3%;
+        float: left;
+        margin-top: 0px;
+    }
+    .Home-logobox {
+        height: 95px;
+    }
+    .Home-logo {
+        width: 60px;
+    }
+    #All-Footer {
+        height: 100px;
+    }
+    #All-Footer p,
+    #All-Footer img {
+        display: table;
+        line-height: 40px;
+    }
+    #All-Footer p {
+        font-size: 10px;
+    }
+    .T img {
+        float: none;
+    }
+    .T .Pa {
+        float: none;
+        margin-top: 0px;
+        margin-bottom: 15px;
+
+    }
+    .T .Pa p {
+        font-size: 12px;
+    }
+    .T h1 {
+        font-size: 22px;
+    }
+}
+
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+@media screen and (max-width:400px) {
+    .Home-Banner-Cantainer {
+        padding: 20px 20px 60px 20px;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, .1);
+    }
+    .Home-Banner-h1 {
+        font-size: 1.8em;
+    }
+    /**/
+    /**/
+    /**/
+    #ElectricCar {
+        box-shadow: inset 0 0 300px rgba(0, 0, 0, .2);
+    }
+
+    #Electric-Car-section {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding-bottom: 40px;
+        background-color: transparent;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .Electric_Car_heading {
+        grid-column: 1/5;
+        grid-row: 1;
+        font-size: 1em;
+        margin-bottom: 20px;
+        margin-left: 10%;
+        color: dimgray;
+    }
+
+
+    .Car_Animate_Box {
+        height: 70px;
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+        grid-column: 1/5;
+        grid-row: 2;
+    }
+
+    .Animate_car {}
+
+    .Car {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+
+    .tyre {
+        height: 50%;
+        width: auto;
+        position: absolute;
+        filter: blur(.5px);
+        animation: 100ms Spin linear infinite;
+    }
+
+    .tyre1 {
+        top: 42%;
+        left: 10%;
+    }
+
+    .tyre2 {
+        top: 42%;
+        left: 71%;
+    }
+
+    .E3 {
+        grid-column: 1/5;
+        grid-row: 3;
+        margin: 20px 0% 40px 8%;
+    }
+
+    .Benefits img {
+        height: auto;
+        width: 15%;
+    }
+
+    .E4 {
+        grid-column: 1/5;
+        grid-row: 4;
+        text-align: justify;
+        margin: 8px;
+    }
+
+    .E5-1 {
+        grid-column: 1/5;
+        grid-row: 5;
+        margin-top: 20px;
+        margin-left: 8%;
+    }
+
+    .green {
+        color: yellowgreen;
+        font-weight: 600;
+    }
+
+    .blue {
+        color: dodgerblue;
+        font-weight: 600;
+    }
+
+
+    .E5 {
+        grid-column: 1/5;
+        grid-row: 6;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+        height: auto;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .E5 img {
+        width: 100%;
+        height: auto;
+        box-shadow: 0 0 20px;
+        border-radius: 20px;
+    }
+
+
+    .E6 {
+        grid-column: 1/5;
+        grid-row: 7;
+        height: auto;
+        text-align: center;
+        margin: 10% auto;
+    }
+
+    .E6 img {
+        height: auto;
+        width: 100%;
+    }
+    .EP1 {
+        font-size: 20px;
+        color: dodgerblue;
+    }
+
+    .EP2 {
+        font-size: 20px;
+        color: dodgerblue;
+    }
+
+    .EP3 {
+        font-size: 20px;
+        color: yellowgreen;
+    }
+
+    .E6_P {
+        margin-left: 10%;
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    .margin {
+        float: left;
+        margin: auto;
+        width: 100%;
+        height: 1px;
+        background-color: black;
+        margin-bottom: 20px;
+    }
+
+    .E7 {
+        grid-column: 1/5;
+        grid-row: 8;
+        margin-top: 20%;
+        text-align: justify;
+    }
+
+    .E7 h2 {
+        margin-bottom: 2%;
+    }
+
+    .E7 img {
+        width: 100%;
+        height: auto;
+        box-shadow: 0 0 20px;
+        border-radius: 10px;
+    }
+
+    .E8 {
+        grid-column: 1/5;
+        grid-row: 11;
+        margin: 5% 0;
+        text-align: justify;
+        display: none;
+    }
+
+    .E9 {
+        grid-column: 1/5;
+        grid-row: 10;
+        width: 100%;
+        height: 100%;
+    }
+
+    .E9 img {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+@media screen and (max-width:380px) {
+    .Home-Btn {
+        height: 30px;
+        width: 30%;
+        line-height: 30px;
+        font-size: 14px;
+    }
+    @keyframes slide-in {
+        0% {
+            top: -35%;
+            left: 0%;
+            opacity: 1;
+        }
+        70% {
+            top: 40%;
+            left: 0%;
+            opacity: 0.1;
+        }
+        100% {
+            top: 40%;
+            left: 5%;
+            opacity: 1;
+        }
+    }
+
+    .Home-Banner-Cantainer {
+        position: absolute;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, .4);
+        box-shadow: inset 0 0 40px rgba(0, 0, 0, .8), 0 0 40px rgba(0, 0, 0, .8);
+        padding: 20px 20px 60px 20px;
+        border-radius: 20px;
+        animation: slide-in 2s ease-in-out;
+        animation-fill-mode: forwards;
+        font-size: 14px;
+    }
+    #News_And_Review_section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .News {
+        font-size: 14px;
+    }
+
+    .NC1 {
+        grid-column: 1/3;
+        grid-row: 1;
+        height: auto;
+        padding: 60px 0px 20px 0px;
+        font-size: 30px;
+        margin: 0px;
+    }
+
+    .NC2 {
+        grid-column: 1/3;
+        grid-row: 2;
+        box-shadow: 0 0 30px;
+        margin: 0px;
+        width: 100%;
+        height: 100%;
+    }
+    .NC3 {
+        grid-column: 1/3;
+        grid-row: 3;
+        width: 100%;
+        margin: 20px 0px;
+    }
+
+    .NC4 {
+        grid-column: 1/3;
+        grid-row: 4;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .NewsVid {
+        height: auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .NC5 {
+        display: none;
+    }
+
+    .Paragraph_Overflow {
+        position: absolute;
+        top: 18%;
+        left: 0;
+        color: white;
+        background-color: black;
+        margin: 20px;
+        font-size: 10px;
+    }
+    .E8 {
+        grid-column: 1/5;
+        grid-row: 6;
+        height: auto;
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .Join_Us_Now_Section {
+        margin-left: 200px;
+    }
+
+    .Join-In-Box {
+        background-color: rgba(0, 0, 0, .8);
+        height: auto;
+        width: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin: auto;
+        margin-top: 40px;
+        box-shadow: inset 0 0 40px rgba(0, 0, 0, .8), 0 0 100px rgba(0, 0, 0, 1);
+        border: 1px solid rgba(255, 255, 255, .2);
+        position: relative;
+        z-index: 5;
+        color: white;
+    }
+
+    .Join-In-Box:before,
+    .Join-In-Box:after {
+        display: none;
+    }
+    .Join-In-Form-Content p,
+    .Join-In-Form-Content input {
+        display: table;
+    }
+    .Join-In-Form-Content input {
+        display: inline;
+    }
+    .Join-In-Form-Content p {
+        color: yellowgreen;
+        width: 200px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    select {
+        width: 48px;
+    }
+
+    .Join-In-Form-Content input[type='text'],
+    .Join-In-Form-Content input[type='password'],
+    .Join-In-Form-Content input[type='tel'],
+    .Join-In-Form-Content input[type='email'] {
+        background-color: transparent;
+        border: none;
+        height: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, .8);
+        margin-left: 10px;
+        color: white;
+        border-radius: 2px;
+    }
+
+    .Join-In-Form-Content input[type='date'] {
+        width: 200px;
+        height: 25px;
+        border-radius: 8px;
+        background-color: rgba(0, 0, 0, .8);
+        color: white;
+        border: 1px solid white;
+    }
+
+    .Join-In-Form-Content input[type='file'] {
+        width: 200px;
+        height: 25px;
+        background-color: transparent;
+        color: white;
+    }
+
+    .Join-In-Form-Content {
+        margin: 10px;
+    }
+
+    .Join-In-Form-Content p {
+        margin: 10px;
+    }
+
+    .Create_Account_Button {
+        height: 30px;
+        width: 140px;
+        background-color: aqua;
+        color: black;
+        border: 4px solid;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .name {
+        width: 100px;
+    }
+
+}
+
+/*              */

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Style.css" type="text/css">
+    <link rel="icon" href="Image/Logo1.png">
+    <title>Eco-Green-Cars</title>
+</head>
+
+<body>
+    <div id="HOME">
+        <video src="Image/BG%20VIDEO.mp4" id="BG" autoplay loop></video>
+        <header class="Header">
+            <!-- Adding website logo in the header section....-->
+            <div class="logobox">
+                <img class="logo" src="Image/Logo.png" alt="Logo" title="Eco-Green-Cars Ltd." onclick="window.location='Home.html'">
+            </div>
+            <!--Creating the navigation bar for the website....-->
+            <nav class="Nav-Bar">
+                <ul class="Main-ul">
+                    <li class="Main-Menu"><a class="Active" href="Home.html">Home</a></li>
+                    <li class="Main-Menu"><a href="Top_10.html">Top 10  <span class="Top_Arrow">&#9660;</span></a>
+                        <ul class="Sub-Menu">
+                            <li><a href="Top_10.html">Top 10 electric cars</a></li>
+                            <li><a href="Top_10.html">Top 10 petrol cars</a></li>
+                            <li><a href="Top_10.html">Top 10 hybrid cars</a></li>
+                        </ul>
+                    </li>
+                    <li class="Main-Menu"><a href="Electric_Cars.html">Electric Cars</a></li>
+                    <li class="Main-Menu"><a href="Community.html">Community</a></li>
+                    <li class="Main-Menu"><a href="News_&_Reviews.html">News & Reviews</a></li>
+                    <li class="Main-Menu"><a href="Tools_and_Calculators.html">Tools and Calculators</a></li>
+                    <li class="Main-Menu"><a href="Join_Us_Now.html">Join Us Now</a></li>
+                </ul>
+            </nav>
+
+            <!-- creating the side navigation bar for low screen resulation(<700px).-->
+            <div class="menuicon">
+                <a href="#menu">
+                    <div class="MenuBtn">Menu</div>
+                </a>
+
+                <div class="menubar" id="menu">
+                    <div class="menubar-container">
+                        <ul class="menu-list">
+                            <li><a href="Home.html">Home</a></li>
+                            <li><a href="Top_10.html">Top 10 Cars</a></li>
+                            <li><a href="Electric_Cars.html">Electric Cars</a></li>
+                            <li><a href="Community.html">Community</a></li>
+                            <li><a href="News_&_Reviews.html">News & Reviews</a></li>
+                            <li><a href="Tools_and_Calculators.html">Tools and Calculators</a></li>
+                            <li><a href="Join_Us_Now.html">Join Us Now</a></li>
+                            <li class="close"><a href="#menu-close">Close</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+
+
+
+        <!-- Banner image and animation -->
+        <div id="Home-Banner">
+
+            <div id="Home-Search-Area">
+                <input class="Home-search-box-input" type="text" placeholder="Search">
+                <div class="Home-search-button ">
+                    <div class="Home-Search-Icon">&#9906;</div>
+                </div>
+            </div>
+
+
+            <div class="Home-Banner-Cantainer">
+                <h1 class="Home-Banner-h1">Eco-Green-Cars</h1>
+                <div class="Home-Btn Home-Button-Sign-up" onclick="window.location='Join_Us_Now.html'">
+                    Sign-Up
+                </div>
+                <span class="Home-Btn Home-Button-Sign-in" onclick="window.location='Sign_In_Page.html'">
+                        Sign-In
+                    </span>
+            </div>
+
+
+            <div class="Home-Slider-Box">
+                <div class="Home-Slider">
+                    <img class="Home-BG-Image" src="Image/BG5.png" alt="">
+                    <img class="Home-BG-Image" src="Image/BG2.png" alt="">
+                    <img class="Home-BG-Image" src="Image/BG3.png" alt="">
+                    <img class="Home-BG-Image" src="Image/BG4.png" alt="">
+                    <img class="Home-BG-Image" src="Image/BG1.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Main page main content-->
+        <div id="Home-Content">
+            <div class=Home-Content-2>
+                <img class="Home-Content-Image" src="Image/HBContentCarImage.png" alt="Car Image">
+            </div>
+
+            <div class="Home-Content-3">
+                <h2><u>About us</u></h2><br>
+                <p> Eco-Green-Car (EGC) Company promote eco-friendly cars that are available to buy. It provides customers with information on the impact of the vehicle on the environment, the lifecycle of each car and compares fuel types such as electric, hybrid and petrol. Our company website will provides information, review and feedback on each of the cars. </p>
+            </div>
+
+            <div class="Home-Content-4">
+                <h2><u>Our mission</u></h2><br>
+                <p>Our main motive is to make this earth a batter place. The increasing rate of pollution is the main cause of global warming. So we are creating a worldwide service to reduce carbon emission by replacing old cars with new eco-friendly cars. Our company is willing to bring eco-friendly cars near people’s hand. So people can buy advanced eco cars at low price.</p>
+            </div>
+
+            <div class="Home-Content-5">
+                <img class="Home-Content-Image" src="Image/HBContentCarImage2.png" alt="Car Image">
+            </div>
+        </div>
+
+        <!-- Footer section -->
+        <footer>
+            <div class="Footer_Top">
+                <div class="Footer_Top_Section F1" onclick="window.location='https://www.facebook.com/'">
+                    <img class="S_icon" src="Image/grey.png" alt="">
+                </div>
+                <div class="Footer_Top_Section F2" onclick="window.location='https://twitter.com/login'">
+                    <img class="S_icon" src="Image/Twitter.png" alt="">
+                </div>
+                <div class="Footer_Top_Section F3" onclick="window.location='https://accounts.google.com/signin'">
+                    <img class="S_icon" src="Image/googleplus-icon.png" alt="">
+                </div>
+                <div class="Footer_Top_Section F4" onclick="window.location='https://bd.linkedin.com/'">
+                    <img class="S_icon" src="Image/slmxhlhyognpiazhjgrv.png" alt="">
+                </div>
+            </div>
+            <div class="Footer_2nd_Section">
+                <div class="col col1">
+                    <h3>BYUR'S GUIDE</h3>
+                    <p>New Cars</p>
+                    <p>New & Used Cars for Sale</p>
+                    <p></p>
+                </div>
+                <div class="col col2">
+                    <h3>COMPANY</h3>
+                    <p>Licensing</p>
+                    <p>Privacy Policy</p>
+                    <p>Contact Us / About Us</p>
+                    <p></p>
+                    <p></p>
+                </div>
+                <div class="col col3">
+                    <h3>VECHICLES BY CLASS</h3>
+                    <p>Compact</p>
+                    <p>Diesel</p>
+                    <p>HYbrid/Electric</p>
+                    <p>Luxury</p>
+                    <p>Luxury Utility</p>
+                    <p>Midsize/Fullsize</p>
+                    <p>Sports</p>
+                    <p>Utility/Offroad</p>
+                </div>
+                <div class="col col4">
+                    <h3>TOOLS</h3>
+                    <p>Compare Vechicles</p>
+                    <p>Calculate tax</p>
+                    <p>Car Insurance</p>
+                </div>
+            </div>
+
+            <div class="Footer_Last_Section">
+                <p>&copy; 2017-2018 Eco-Green-Cars ltd. All Right Reserved.,Privacy Policy | Terms of Use</p>
+            </div>
+
+
+        </footer>
+
+
+
+    </div>
+</body>
+
+</html>
